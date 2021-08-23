@@ -1,0 +1,468 @@
+.body{
+  background: #000000;
+}
+
+.body1{
+  background: #a6ff00;
+}
+.body2{
+  background: #000752;
+}
+.body3{
+  background: #610035;
+}
+.body4{
+  background: #006151;
+}
+.body5{
+  background: #ff6600;
+}
+.body6{
+  background: #276100;
+}
+.body7{
+  background: #9e8600;
+}
+.body8{
+  background: #7719b6;
+}
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.marginTop {
+    margin-top: 400px;
+    font-size: 21px;
+    color: white;
+}
+
+.sidenav {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0000006e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ff0000;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 60px;}
+  .sidenav a {font-size: 18px;}
+}
+.sidenav1 {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #0000006e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav1 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav1 a:hover {
+  color: #ff0000;
+}
+
+.sidenav1 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 60px;}
+  .sidenav a {font-size: 18px;}
+}
+  /* #mySearch {
+  width: 83%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+} */
+
+.sort{
+  cursor: pointer;
+  box-shadow: #fff;
+}
+
+.inputtext{
+  width: 200px;
+  padding: 15px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: white;
+  background-color: #ffffff00;
+  place-content: #000;
+  color: #fff;}
+  .inputtext:focus{
+    border-bottom-style: dashed; 
+    background-color: #ffffff00;
+    color: #fff;
+    outline: none;
+  }
+  .inputtext:hover{
+    background-color: #ffffff00;
+    box-shadow: 0 12px 16px 0 #00000088, 0 50px 50px 0 #2c2c2c;
+    outline: none;
+    color: #fff;
+  }
+
+
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        .span{
+          color: #ffffff;
+          font-size: 30px;
+          cursor: pointer;
+        }
+
+  .HR {
+    width:100%; 
+    height: 2px; 
+    background-color: #ffffff;
+    border: none;
+    /* background-image: linear-gradient(to bottom,#ffffff,#00000070); */
+  }
+
+  .toxic{
+    color: #08fc00;
+    font-size: 40px;
+  }
+  .logo{
+  color: #ff0000;
+  font-size: 50px;
+  }
+  .logo1{
+    color: #fff;
+    }
+  .button[type=submit]{
+	/* background styles */
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px;
+	background-color: #00000000;
+	background-image: linear-gradient(#00000000,#ffffff00);
+	color: #fff;
+  font-size: 19px;
+  height: 50px;
+  width: 200px;
+  }
+  .button[type=submit]:focus{
+    outline: none;
+  }
+  .button[type=submit]:hover {
+  color: #ffffff;
+  border-style: dashed;
+  box-shadow: 0 12px 16px 0 #ffffff88, 0 17px 50px 0 #ffffff;
+}
+.button:after{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+font{
+  
+  font-family: cursive;
+  color: #ffffff;
+  font-size: 35px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+/* @-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 15px #fff;
+  }
+  
+  to {
+    text-shadow: 0 0 0px #fff;
+  }
+} */
+.font1{
+  font-family: cursive;
+  color: #ffffff;
+  font-size: 50px;
+  /* background-color: #2200ff; */
+}
+.input2[type=text]{
+  width: 100%;
+padding: 0px;
+border: none;
+background: #00000000;
+color: #ffffff;}
+.input2[type=text]:focus{
+  background-color: #00000000;
+  outline: none;
+  color: #949494;}
+
+  .input[type=submit]{
+    width: 50px;
+    border-color: #fff; 
+    background-color: #00000000; 
+    color: #fff;
+  }
+  .input[type=submit]:hover{
+    box-shadow: 0 12px 16px 0 #ff000088, 0 17px 50px 0 #ff0000;
+  }
+  
+  .input1[type=submit]{
+    width: 50px;
+    border-color: #fff; 
+    background-color: #00000000; 
+    color: #fff;
+  }
+  .input1[type=submit]:hover{
+    box-shadow: 0 12px 16px 0 #33ff0088, 0 17px 50px 0 #33ff00;
+  }
+
+  .input3{
+    width: 50px;
+    border-color: #fff; 
+    background-color: #00000000; 
+    color: #fff;
+  }
+  .input3:hover{
+    box-shadow: 0 12px 16px 0 #2200ff88, 0 17px 50px 0 #2200ff;
+  }
+
+  .button2[type=button]{
+	/* background styles */
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px;
+	background-color: #00000000;
+	background-image: linear-gradient(#00000000, #afafaf00,#ffffff00);
+	color: #fff;
+  font-size: 19px;
+  height: 50px;
+  width: 200px;
+  }
+  .button2[type=button]:focus{
+    outline: none;
+  }
+  .button2[type=button]:hover {
+  color: #ffffff;
+  border-style: dashed;
+  box-shadow: 0 12px 16px 0 #ffffff88, 0 17px 50px 0 #ffffff;
+}
+.button2:after{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(#ffffffcc, #ffffff33);
+}
+#myAnimation5 {
+margin-left: 100px;
+margin-top: -50px;
+  position: absolute;
+  color: red; 
+  font-size: 200px;
+}
+#myContainer {
+  width: 370px;
+  height: 300px;
+  position: relative;
+  background: #00000000;
+}
+.user:hover{
+  box-shadow: 0 12px 50px 0 #000000, 0 17px 50px 0 #00000090, 0 15px 50px 0 #00000050, 0 15px 50px 0 #00000010;
+  background-color: #00000000;
+}
+.user{
+  font-size: 100px; color: ghostwhite; 
+  background-color: #00000000; 
+  border: none;
+}
+.badge {
+  position: absolute;
+  top: 350px;
+  right: 5px;
+  width: 10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.logo2{
+  position: fixed;
+  top: 300px;
+  left: 100px;
+}
+.font{
+
+  margin-left: 400px;
+}
+::-webkit-scrollbar-track {
+  background-color: #000000;
+  box-shadow: inset 0 0 5px #ff0000;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom,#ff0000,#ff000090,#ff000070,#ff000050,#ff000000);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to bottom,#7cfc00,#7cfc0090,#7efc0070,#7efc0050,#7cfc0000); 
+}
+
+::-webkit-scrollbar-track:hover {
+  box-shadow: inset 0 0 5px #33ff00;
+  background-color: #000000;
+  box-shadow: #000000;
+}
+::-webkit-scrollbar{
+  width: 5px;
+  background: none;
+  background-color: #ffffff00;
+  background-size: 0px;
+}
+::-webkit-scrollbar:hover{
+  width: 15px;
+  background: none;
+  background-color: #ffffff00;
+  background-size: 0px;
+}
+
+.header{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+.header1{
+  position: fixed;
+  top: 300px;
+  left: 0px;
+  width: 100%;
+  overflow-y: hidden;
+}
+.footer{
+  margin-top: 255px;
+}
+.footer1{
+  margin-top: 200px;
+}
+.end{
+  position: fixed;
+  top: 640px;
+  left: 0px;
+  width: 100%;
+  overflow-x: hidden;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 2px;
+  height: 375px;
+  width: 20px;
+  z-index: 99;
+  padding-left: 1px; 
+  padding-right: 1px; 
+}
+::-webkit-input-placeholder{
+  color: #fff ;
+}
+.button3[type=button]{
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px;
+	background-color: #00000000;
+	background-image: linear-gradient(#00000000, #afafaf00,#ffffff00);
+	color: #fff;
+  font-size: 19px;
+  height: 80px;
+  width: 200px;
+  }
+  .button3[type=button]:focus{
+    outline: none;
+  }
+  .button3[type=button]:hover {
+  color: #ffffff;
+  border-style: dashed;
+  box-shadow: 0 12px 16px 0 #ffffff88, 0 17px 50px 0 #ffffff;
+}
+.button3:after{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(#ffffffcc, #ffffff33);
+}

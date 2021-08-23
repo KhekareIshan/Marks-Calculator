@@ -1,0 +1,135 @@
+<html>
+    <title>Mark Sheet</title>
+    <body class="body4">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+        <link rel="stylesheet" type="text/css" href="style.css" />
+            <script>
+            function compare(){
+            var first = document.getElementById('first').value;
+            var second1 = document.getElementById('second').value;
+            var second = second1 - 0.1
+            var total = document.getElementById('total').value;
+            var result = document.getElementById("demo");
+            var greeting = document.getElementById("greeting");
+            var thumbs = document.getElementById("thumbs");
+            var div = document.getElementById("div");
+            if (first < second)
+                    {
+                        div.style.visibility = "visible";
+                        result.innerHTML="Fail";
+                        greeting.innerHTML=" &nbsp;Better Luck Next Time!"
+                        thumbs.className="fa fa-thumbs-down"
+                    }
+                    else
+                    {
+                        div.style.visibility = "visible";
+                        result.innerHTML="Pass";
+                        greeting.innerHTML=" &nbsp;Conratulations!"
+                        thumbs.className="fa fa-thumbs-up"
+                    }
+                    }
+            function f2() {
+                var total=document.getElementById('total').value;
+                var first=document.getElementById('first').value;
+                var result2 = first * 100
+                var result = result2 / total
+                var grade = document.getElementById("grade");
+                var percentage = document.getElementById("percentage");
+                var Result = document.getElementById("demo");
+                var div = document.getElementById("div");
+                if (result >= 91 && result < 101) {
+                    grade.innerHTML = "A1";
+                } else if (result >= 81 && result < 91){
+                    grade.innerHTML = "A2";
+                } else if (result >= 71 && result < 81){
+                    grade.innerHTML = "B1";
+                } else if (result >= 61 && result < 71){
+                    grade.innerHTML = "B2";
+                } else if (result >= 51 && result < 61){
+                    grade.innerHTML = "C1";
+                } else if (result >= 41 && result < 51){
+                    grade.innerHTML = "C2";
+                } else if (result >= 31 && result < 41){
+                    grade.innerHTML = "D";
+                } else {
+                    grade.innerHTML = "E";
+                }
+                percentage.innerHTML = result + " " + "%"
+                div.style.visibility = "visible";
+            }
+            function f3() {
+                var result = document.getElementById("demo");
+                var grade = document.getElementById("grade");
+                var percentage = document.getElementById("percentage");
+                var thumbs = document.getElementById("thumbs");
+                var div = document.getElementById("div");
+                if (result.innerHTML === "Pass") {
+                    result.style.color = "#22ff00"
+                    grade.style.color = "#22ff00"
+                    percentage.style.color = "#22ff00"
+                    thumbs.style.color = "#22ff00"
+                    div.style.visibility = "visible";
+                } else {
+                    result.style.color = "red"
+                    grade.style.color = "red"
+                    percentage.style.color = "red"
+                    thumbs.style.color = "red"
+                    div.style.visibility = "visible";
+                }
+            }
+            function f4() {
+                var total=document.getElementById('total').value;
+                var first=document.getElementById('first').value;
+                var thumbs = document.getElementById("thumbs");
+                var result2 = total / 100
+                var result = first / result2;
+                var greeting = document.getElementById("greeting");
+                var div = document.getElementById("div");
+                 if (result >= 101) { 
+                    div.style.visibility = "hidden"
+                    greeting.innerHTML = " &nbsp;Marks Out Of Range!";
+                    thumbs.style.color = "Yellow"
+                    thumbs.className="fa fa-ban"
+            }
+            }
+            function f5() {
+                var total=document.getElementById('total');
+                var first=document.getElementById('first');
+                var second=document.getElementById('second');
+                var grade = document.getElementById("grade");
+                var percentage = document.getElementById("percentage");
+                var Result = document.getElementById("demo");
+                var greeting = document.getElementById("greeting");
+                var thumbs = document.getElementById("thumbs");
+                var div = document.getElementById("div");
+                div.style.visibility = "visible";
+                grade.innerHTML = "";
+                    Result.innerHTML = "";
+                    percentage.innerHTML = "";
+                    greeting.innerHTML = "";
+                    thumbs.innerHTML = ""
+                    thumbs.className="fa fa-huishtnsv"
+                    first.value=""
+                    second.value=""
+                    total.value=""
+            }
+            </script>
+            <center>
+                <font class="font1">Mark Sheet</font>
+                <br><br>
+            <font>
+            <input id="total" class="inputtext" type="number" name="total"/> :Total Marks&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+            <input id="second" class="inputtext" type="number" name="second"/> :Passing Marks<br><br>
+            &nbsp;&nbsp;&nbsp;<input id="first" class="inputtext" type="number" name="first" /> :Marks Obtained<br><br>
+            <button type="button" class="button2" onclick="compare();f2();f3();f4();">Submit</button>
+            &nbsp;&nbsp;&nbsp;<button type="button" class="button2" onclick="f5();">Clear</button><br><br>
+        </font>
+        <div id="div">
+        <font>Result: <u id="demo" style="color: white;"></u></font>&nbsp;&nbsp;
+        <font>Grade: <u id="grade" style="color: white;"></u></font>&nbsp;&nbsp;
+        <font>Percentage: <u id="percentage" style="color: white;"></u></font><br><br>
+    </div>
+            <font><i id="thumbs"></i><b id="greeting"></b></font>
+        </center>
+            </body>
+            </html>
